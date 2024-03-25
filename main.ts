@@ -21,9 +21,11 @@ export default class CharacterGeneratorPlugin extends Plugin {
 
 		return `### ${character.name} (${this.generator.convertPronouns(
 			character.pronouns
-		)})\n* ${character.culture}\n* ${character.appearance} \n* ${
-			character.demeanor
-		}\n* ${character.goal}\n* ${character.quirk}`;
+		)})\n* Culture: ${character.culture}\n* Appearance: ${
+			character.appearance
+		} \n* Demeanor: ${character.demeanor}\n* Goal: ${
+			character.goal
+		}\n* Quirk: ${character.quirk}`;
 	}
 
 	onunload() {}
